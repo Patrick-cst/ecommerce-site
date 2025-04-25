@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 2,
             name: "Notebook Ultrafino Pro",
-            price: 7899.99,
+            price: 4899.99,
             category: "electronics",
             image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
             rating: 4.9,
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 5,
-            name: "Bolsa de Couro Legítimo",
+            name: "Jaqueta de Couro Legítimo",
             price: 899.99,
             category: "fashion",
             image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 6,
-            name: "Sofá em Couro Nobre",
+            name: "Sofá em tecido Nobre",
             price: 4299.99,
             category: "home",
             image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",

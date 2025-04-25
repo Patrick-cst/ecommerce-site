@@ -11,12 +11,20 @@ document.addEventListener('DOMContentLoaded', function () {
         div.classList.add('order-item');
         div.innerHTML = `
             <h2>Pedido #${pedido.id}</h2>
-            <p>Data: ${pedido.data}</p>
-            <p>Total: ${pedido.total}</p>
-            <h3>Itens:</h3>
-            <ul>
-                ${pedido.itens.map(item => `<li>${item.name} - Quantidade: ${item.quantity}</li>`).join('')}
-            </ul>
+            <p class="order-date">Data: ${pedido.data}</p>
+            <p class="order-total">Total: ${pedido.total}</p>
+            <h3>Itens do Pedido:</h3>
+            <div class="order-products">
+                ${pedido.itens.map(item => `
+                    <div class="product-item">
+                        <img src="${item.image || 'https://via.placeholder.com/100'}" alt="${item.name}">
+                        <div>
+                            <p class="product-name">${item.name}</p>
+                            <p>Quantidade: ${item.quantity}</p>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
         `;
         lista.appendChild(div);
     });
